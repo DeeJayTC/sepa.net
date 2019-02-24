@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCDev.SEPA", "TCDev.SEPA\TCDev.SEPA.csproj", "{056EE469-4EC0-4007-9406-B47D25C75AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCDev.SEPA.Utilities", "TCDev.SEPA.Utilities\TCDev.SEPA.Utilities.csproj", "{586F2A21-27C1-4C16-8A21-9A721F068DF6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs29
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TCDev.SEPA\\TCDev.SEPA.csproj
+		SccProjectName1 = TCDev.SEPA
+		SccLocalPath1 = TCDev.SEPA
+		SccProjectUniqueName2 = TCDev.SEPA.Utilities\\TCDev.SEPA.Utilities.csproj
+		SccProjectName2 = TCDev.SEPA.Utilities
+		SccLocalPath2 = TCDev.SEPA.Utilities
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{056EE469-4EC0-4007-9406-B47D25C75AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056EE469-4EC0-4007-9406-B47D25C75AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056EE469-4EC0-4007-9406-B47D25C75AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056EE469-4EC0-4007-9406-B47D25C75AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{586F2A21-27C1-4C16-8A21-9A721F068DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{586F2A21-27C1-4C16-8A21-9A721F068DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{586F2A21-27C1-4C16-8A21-9A721F068DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{586F2A21-27C1-4C16-8A21-9A721F068DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

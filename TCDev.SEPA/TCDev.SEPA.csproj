@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{056EE469-4EC0-4007-9406-B47D25C75AF8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TCDev.SEPA</RootNamespace>
+    <AssemblyName>TCDev.SEPA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMI\admi.002.001.01\MessageRejectV01 .cs" />
+    <Compile Include="ADMI\admi.004.001.01\SystemEventNotificationV01 .cs" />
+    <Compile Include="CAMT\camt_026_001_04\MissingOrIncorrectInformation2.cs" />
+    <Compile Include="CAMT\camt_026_001_04\UnableToApplyIncorrectInformation3Code.cs" />
+    <Compile Include="CAMT\camt_026_001_04\UnableToApplyJustification2Choice.cs" />
+    <Compile Include="CAMT\camt_026_001_04\UnableToApplyMissingInformation2Code.cs" />
+    <Compile Include="CAMT\camt_027_001_04\AccountIdentification4Choice.cs" />
+    <Compile Include="CAMT\Generic\CashAccount24.cs" />
+    <Compile Include="CAMT\camt_052_001_03\CashAccount25.cs" />
+    <Compile Include="Generic\Identification\Choices.cs" />
+    <Compile Include="CAMT\camt_052_001_03\NameAndAddress10.cs" />
+    <Compile Include="Generic\DocumentTypeCodes.cs" />
+    <Compile Include="Generic\GroupHeader\GroupHeader55.cs" />
+    <Compile Include="Generic\ItemChoiceTypes.cs" />
+    <Compile Include="Generic\ProprietaryPrice2.cs" />
+    <Compile Include="Generic\Structured\StructuredRemittanceInformation3.cs" />
+    <Compile Include="Generic\Tax\Choices.cs" />
+    <Compile Include="Generic\Tax\Enums.cs" />
+    <Compile Include="Generic\ActiveCurrencyAndAmount.cs" />
+    <Compile Include="CAMT\Generic\Price2.cs" />
+    <Compile Include="CAMT\Generic\Choices.cs" />
+    <Compile Include="Generic\Identification\GenericIdentification3.cs" />
+    <Compile Include="Generic\Tax\TaxCharges2.cs" />
+    <Compile Include="Generic\Tax\TaxAmount1.cs" />
+    <Compile Include="Generic\Tax\TaxAuthorisation1.cs" />
+    <Compile Include="Generic\Tax\TaxInformation3.cs" />
+    <Compile Include="Generic\Tax\TaxParty1.cs" />
+    <Compile Include="Generic\Tax\TaxParty2.cs" />
+    <Compile Include="Generic\Tax\TaxPeriod1.cs" />
+    <Compile Include="Generic\Tax\TaxRecord1.cs" />
+    <Compile Include="Generic\Tax\TaxRecordDetails1.cs" />
+    <Compile Include="CAMT\Transaction\Transaction.cs" />
+    <Compile Include="Generic\ActiveOrHistoricCurrencyAnd13DecimalAmount.cs" />
+    <Compile Include="Generic\Identification\OtherIdentification1.cs" />
+    <Compile Include="Generic\Identification\SecurityIdentification14.cs" />
+    <Compile Include="Generic\Identification\GenericIdentification20.cs" />
+    <Compile Include="CAMT\Generic\BranchData2.cs" />
+    <Compile Include="CAMT\Generic\Case3.cs" />
+    <Compile Include="Generic\Identification\OriginalGroupInformation3.cs" />
+    <Compile Include="Generic\Underlying\UnderlyingGroupInformation1.cs" />
+    <Compile Include="Generic\Underlying\UnderlyingPaymentInstruction2.cs" />
+    <Compile Include="Generic\Underlying\UnderlyingPaymentTransaction2.cs" />
+    <Compile Include="Generic\Underlying\UnderlyingStatementEntry1.cs" />
+    <Compile Include="Generic\Underlying\UnderlyingTransaction2Choice.cs" />
+    <Compile Include="Generic\Identification\GenericPersonIdentification1.cs" />
+    <Compile Include="Generic\Identification\DateAndPlaceOfBirth.cs" />
+    <Compile Include="Generic\Identification\GenericOrganisationIdentification1.cs" />
+    <Compile Include="Generic\Identification\OrganisationIdentificationSchemeName1Choice.cs" />
+    <Compile Include="Generic\Identification\PersonIdentification5.cs" />
+    <Compile Include="Generic\Identification\GenericFinancialIdentification1.cs" />
+    <Compile Include="Generic\ActiveOrHistoricCurrencyAndAmount.cs" />
+    <Compile Include="Generic\Identification\BranchAndFinancialInstitutionIdentification5.cs" />
+    <Compile Include="Generic\Identification\FinancialInstitutionIdentification8.cs" />
+    <Compile Include="CAMT\Generic\CaseAssignment3.cs" />
+    <Compile Include="CAMT\Generic\PointOfInteraction\PointOfInteractionComponent1.cs" />
+    <Compile Include="CAMT\Transaction\EntryTransaction3.cs" />
+    <Compile Include="CAMT\Transaction\TransactionIdentifier1.cs" />
+    <Compile Include="CAMT\Generic\PointOfInteraction\PointOfInteraction1.cs" />
+    <Compile Include="CAMT\Generic\PointOfInteraction\PointOfInteractionCapabilities1.cs" />
+    <Compile Include="CAMT\Generic\Product2.cs" />
+    <Compile Include="CAMT\Generic\Card\CardSecurityInformation1.cs" />
+    <Compile Include="CAMT\camt_026_001_04\UnableToApplyV04.cs" />
+    <Compile Include="CAMT\camt_027_001_04\ClaimNonReceiptV04.cs" />
+    <Compile Include="Generic\Identification\GenericIdentification1.cs" />
+    <Compile Include="Generic\Identification\GenericIdentification32.cs" />
+    <Compile Include="CAMT\Generic\PaymentCard4.cs" />
+    <Compile Include="CAMT\Generic\Card\PlainCardData1.cs" />
+    <Compile Include="CAMT\Generic\TrackData1.cs" />
+    <Compile Include="CAMT\Generic\Card\CardAggregated1.cs" />
+    <Compile Include="CAMT\Generic\Card\CardIndividualTransaction1.cs" />
+    <Compile Include="CAMT\Generic\Card\CardSequenceNumberRange1.cs" />
+    <Compile Include="CAMT\Generic\Card\CardTransaction1.cs" />
+    <Compile Include="CAMT\Generic\Card\CardTransaction1Choice.cs" />
+    <Compile Include="CAMT\camt_053_001_03\BankToCustomerStatementV03.cs" />
+    <Compile Include="CAMT\camt_054_001_03\BankToCustomerDebitCreditNotificationV03.cs" />
+    <Compile Include="CAMT\camt_052_001_03\BankToCustomerAccountReportV03.cs" />
+    <Compile Include="CAMT\Generic\AccountReport12.cs" />
+    <Compile Include="Generic\Contact\ContactDetails2.cs" />
+    <Compile Include="Generic\GroupHeader\GroupHeader58.cs" />
+    <Compile Include="Generic\Identification\PartyIdentification43.cs" />
+    <Compile Include="CAMT\Generic\ReportEntry3.cs" />
+    <Compile Include="CAMT\Generic\SuplementaryData1.cs" />
+    <Compile Include="Generic\Choices.cs" />
+    <Compile Include="Generic\Dates.cs" />
+    <Compile Include="Generic\Enumerations.cs" />
+    <Compile Include="Generic\Contact\PostalAddress6.cs" />
+    <Compile Include="PAIN\Generic\Choices.cs" />
+    <Compile Include="PAIN\Generic\Enumerations.cs" />
+    <Compile Include="PAIN\Generic\PaymentIdentification1.cs" />
+    <Compile Include="PAIN\pain.008.001.03\AccountSchemeName1Choice.cs" />
+    <Compile Include="PAIN\pain.008.001.03\CustomerDirectDebitInitiationV03.cs" />
+    <Compile Include="Generic\Identification\OrganisationIdentification8.cs" />
+    <Compile Include="Generic\Identification\GenericAccountIdentification1.cs" />
+    <Compile Include="PAIN\pain.008.001.04\CreditorReferenceType1Choice.cs" />
+    <Compile Include="PAIN\pain.008.001.04\CustomerDirectDebitInitiationV03.cs" />
+    <Compile Include="Generic\Structured\StructuredRegulatoryReporting3.cs" />
+    <Compile Include="PAIN\pain.008.001.04\PaymentTypeInformation24.cs" />
+    <Compile Include="PAIN\pain.008.001.04\ReferredDocumentInformation3.cs" />
+    <Compile Include="PAIN\pain.008.001.04\ReferredDocumentType2.cs" />
+    <Compile Include="PAIN\pain.008.001.04\RegulatoryAuthority2.cs" />
+    <Compile Include="PAIN\pain.008.001.04\RegulatoryReporting3.cs" />
+    <Compile Include="PAIN\pain.008.001.04\RemittanceInformation7.cs" />
+    <Compile Include="PAIN\pain.008.001.04\ServiceLevel8Choice.cs" />
+    <Compile Include="PAIN\pain.008.001.01\CustomerDirectDebitInitiationV01.cs" />
+    <Compile Include="PAIN\pain.008.001.02\CustomerDirectDebitInitiationV02.cs" />
+    <Compile Include="Parser\ParserException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Parser\SEPAFileParser.cs" />
+    <Compile Include="Parser\XMLStringSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ADMI\XSD\admi.002.001.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ADMI\XSD\admi.004.001.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMT\XSD\camt.026.001.04.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMT\XSD\camt.027.001.04.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMT\XSD\camt.031.001.04.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMT\XSD\camt.032.001.03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMT\XSD\camt.052.001.03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMT\XSD\camt.053.001.03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMT\XSD\camt.054.001.03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PAIN\XSD\pain.001.001.04.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PAIN\XSD\pain.002.001.04.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PAIN\XSD\pain.007.001.03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PAIN\XSD\pain.008.001.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PAIN\XSD\pain.008.001.02.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PAIN\XSD\pain.008.001.03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PAIN\XSD\pain.008.001.04.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PAIN\XSD\pain.013.001.02.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PAIN\XSD\pain.014.001.02.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CAMT\Generic\Transaction\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

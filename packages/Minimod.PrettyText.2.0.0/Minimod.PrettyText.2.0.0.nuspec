@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Minimod.PrettyText</id>
+    <version>2.0.0</version>
+    <title>Minimod.PrettyText</title>
+    <authors>Lars Corneliussen</authors>
+    <owners>Lars Corneliussen</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Extends System.String/IEnumerable&lt;string&gt; by following methods: 
+    
+      a) ShortenTo(int length, string hint = "..."): 
+           Crops a text to fit into certain number of chars. Appends 'hint' if it has to be cropped; 
+      
+      b) WrapAt(int margin): 
+           Nicely wraps a text at the given margin. Tries not to split in the middle of words.
+      
+      c) SplitLines, JoinLines: 
+           Splits a string into a list of lines; or joins it. Both using Environment.NewLine
+      
+      d) IEnumerable&lt;string&gt;.IndentBy(int leadingChars):
+           Indents a each of a list of lines by given number of spaces.
+           
+      e) string.IndentLinesBy(int leadingChars):
+           Indents each line in the string by given number of spaces.</description>
+    <summary>A minimod with string extensions, helping whereever you have to shape text to fit into a box.</summary>
+    <releaseNotes />
+    <copyright />
+    <language />
+    <tags>minimod</tags>
+    <references />
+  </metadata>
+</package>
